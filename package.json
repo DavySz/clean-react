@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "first-install": "yarn install && husky install"
+    "first-install": "yarn install && husky install",
+    "test": "jest --passWithNoTests",
+    "test:watch": "yarn test -- --watch",
+    "test:ci": "yarn test -- --coverage",
+    "test:staged": "yarn test -- --findRelatedTests"
   },
   "keywords": [],
   "author": "",
