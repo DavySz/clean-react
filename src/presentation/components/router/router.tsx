@@ -1,0 +1,16 @@
+import React from "react";
+import "@/presentation/styles/global.scss";
+import { Login } from "@/presentation/pages";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const Router: React.FC = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" Component={Login} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default Router;
