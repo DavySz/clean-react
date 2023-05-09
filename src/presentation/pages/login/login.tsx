@@ -30,10 +30,12 @@ const Login: React.FC = () => {
             placeholder="Digite sua senha"
           />
 
-          <button type="submit" className={Styles.submit}>
+          <button type="submit" disabled className={Styles.submit}>
             Entrar
           </button>
-          <span className={Styles.link}>Criar conta</span>
+          <span className={Styles.link} data-testid="submit">
+            Criar conta
+          </span>
           <FormStatus />
         </form>
       </Context.Provider>
